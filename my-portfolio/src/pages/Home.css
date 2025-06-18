@@ -1,0 +1,105 @@
+.hero {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero .container .content svg {
+    margin-bottom: -9rem;
+}
+
+.hero .container .content svg text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 132px;
+    fill: #111111;
+    animation: stroke 5s infinite alternate;
+}
+
+.hero .container .content h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 48px;
+    width: 65%;
+}
+
+.hero .container .content h1 span {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.hero .container .content button {
+    cursor: pointer;
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    color: #fff;
+    background-color: #000;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.hero .container .content button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #000;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.hero .container .content button span:active {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.hero .container .content button span:not(active) {
+    transition: all 1d;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+    }
+
+    70% {
+        stroke: white;
+    }
+
+    80% {
+        stroke: white;
+        stroke-width: 3;
+    }
+
+    100% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+    }
+}
