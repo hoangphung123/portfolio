@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "react-router-dom": "^7.6.2",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.8.1"
-  }
-}
